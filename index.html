@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulf Star Hotel | Luxury Redefined in Hargeisa</title>
+    <meta name="description" content="Experience world-class 5-star luxury at Gulf Star Hotel in Hargeisa. Premium rooms, fine dining, and unparalleled service.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#overview" class="logo">
+                <!-- User will replace this with their actual logo file -->
+                <img src="assets/logo.png" alt="Gulf Star Restaurant Logo" id="brand-logo" onerror="this.onerror=null; this.src=''; this.alt='Gulf Star Restaurant'; this.classList.add('text-logo');">
+            </a>
+            
+            <div class="nav-menu">
+                <a href="#overview" class="nav-link active">Overview</a>
+                <a href="#experiences" class="nav-link">Experiences</a>
+                <a href="#rooms" class="nav-link">Rooms & Suites</a>
+                <a href="#dining" class="nav-link">Restaurant Dining</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contacts</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn-primary" id="open-booking">Book Now</button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="assets/hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">Experience<br><span class="accent-text">Gulf Star Hotel</span></h1>
+            <div class="decorative-line fade-in-up delay-1"></div>
+            <p class="hero-subtitle fade-in-up delay-2">Luxury Redefined in Hargeisa</p>
+            <button class="btn-primary btn-large fade-in-up delay-3" id="hero-book-btn">Book Your Stay</button>
+        </div>
+        <div class="scroll-indicator">
+            <p>SCROLL TO DISCOVER</p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+    </header>
+
+    <!-- Booking Engine Section -->
+    <section id="booking-engine" class="booking-engine-bar">
+        <div class="container">
+            <form class="booking-bar-form">
+                <div class="booking-field">
+                    <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Check-In</label>
+                    <input type="date" required>
+                </div>
+                <div class="booking-field">
+                    <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Check-Out</label>
+                    <input type="date" required>
+                </div>
+                <div class="booking-field">
+                    <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> Guests</label>
+                    <select>
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4+">4+ Guests</option>
+                    </select>
+                </div>
+                <div class="booking-field">
+                    <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Room Type</label>
+                    <select>
+                        <option value="deluxe">Deluxe King Room</option>
+                        <option value="executive">Executive Suite</option>
+                        <option value="presidential">Presidential Suite</option>
+                        <option value="family">Family Luxury Room</option>
+                    </select>
+                </div>
+                <button type="button" class="btn-primary" onclick="document.getElementById('open-booking').click()">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="overview" class="features-section">
+        <div class="features-container">
+            <div class="feature-card active" data-feature="1">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                </div>
+                <h3>World Class Service</h3>
+                <p>Experience unparalleled hospitality and luxury service tailored for VIP guests.</p>
+            </div>
+            <div class="feature-card" data-feature="2">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"></path></svg>
+                </div>
+                <h3>Luxury Rooms</h3>
+                <p>Elegant rooms & suites designed with premium comfort and sophisticated style.</p>
+            </div>
+            <div class="feature-card" data-feature="3">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"></path></svg>
+                </div>
+                <h3>Fine Dining</h3>
+                <p>A culinary journey with the finest flavors, ambiance, and chef-quality presentation.</p>
+            </div>
+            <div class="feature-card" data-feature="4">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"></path></svg>
+                </div>
+                <h3>High-Speed Wi-Fi</h3>
+                <p>Stay seamlessly connected with our complimentary enterprise-grade Wi-Fi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms & Suites Section -->
+    <section id="rooms" class="section brand-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Rooms & Suites</h2>
+                <div class="decorative-line-center"></div>
+                <p>Discover our meticulously designed accommodations offering unparalleled comfort.</p>
+            </div>
+            <div class="rooms-grid">
+                <!-- Deluxe King Room -->
+                <div class="room-card fade-in-up">
+                    <div class="room-img-container">
+                        <img src="assets/deluxe_king.png" alt="Deluxe King Room" class="room-img">
+                        <div class="room-price-tag">$120 <span>/night</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Deluxe King Room</h3>
+                        <p>Experience premium comfort with an expansive king bed, modern amenities, and elegant emerald accents.</p>
+                        <button class="btn-primary w-100 mt-2" onclick="document.getElementById('open-booking').click()">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Executive Suite -->
+                <div class="room-card fade-in-up delay-1">
+                    <div class="room-img-container">
+                        <img src="assets/executive_suite.png" alt="Executive Suite" class="room-img">
+                        <div class="room-price-tag">$180 <span>/night</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Executive Suite</h3>
+                        <p>Designed for the discerning traveler, featuring a separate living area, panoramic views, and upgraded luxury.</p>
+                        <button class="btn-primary w-100 mt-2" onclick="document.getElementById('open-booking').click()">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Presidential Suite -->
+                <div class="room-card fade-in-up delay-2">
+                    <div class="room-img-container">
+                        <img src="assets/presidential_suite.png" alt="Presidential Suite" class="room-img">
+                        <div class="room-price-tag">$300 <span>/night</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Presidential Suite</h3>
+                        <p>The pinnacle of luxury. Unmatched space, a private balcony, butler service, and exquisite dining arrangements.</p>
+                        <button class="btn-primary w-100 mt-2" onclick="document.getElementById('open-booking').click()">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Family Luxury Room -->
+                <div class="room-card fade-in-up delay-3">
+                    <div class="room-img-container">
+                        <img src="assets/family_luxury.png" alt="Family Luxury Room" class="room-img">
+                        <div class="room-price-tag">$200 <span>/night</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Family Luxury Room</h3>
+                        <p>Spacious and perfectly appointed for family stays, offering connecting room options and premium comfort for all.</p>
+                        <button class="btn-primary w-100 mt-2" onclick="document.getElementById('open-booking').click()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fine Dining Section -->
+    <section id="dining" class="section dark-green-section">
+        <div class="container">
+            <div class="grid-2 reverse-desktop">
+                <div class="content-block">
+                    <h2 class="accent-text">Gulf Star Restaurant</h2>
+                    <div class="decorative-line"></div>
+                    <p>Indulge in a world-class culinary experience. Our signature restaurant offers exquisite fine dining with chef-curated menus, premium ingredients, and an elegant atmosphere.</p>
+                    <button class="btn-outline mt-2">View Menu</button>
+                </div>
+                <div class="image-showcase">
+                    <img src="assets/fine_dining.png" alt="Fine Dining Restaurant" class="zoom-effect">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="section brand-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Experiences</h2>
+                <div class="decorative-line-center"></div>
+                <p>Immerse yourself in a world of luxury, culture, and refined hospitality.</p>
+            </div>
+            <div class="experiences-gallery">
+                <!-- Experience 1: Gourmet Dining -->
+                <div class="experience-card fade-in-up">
+                    <div class="experience-img-container">
+                        <img src="assets/fine_dining.png" alt="Gourmet Dining" class="experience-img">
+                        <div class="experience-overlay">
+                            <div class="experience-info">
+                                <h3>Gourmet Dining</h3>
+                                <p>A culinary journey of local and international flavors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: Signature Events -->
+                <div class="experience-card fade-in-up delay-1">
+                    <div class="experience-img-container">
+                        <img src="assets/signature_events.png" alt="Signature Events" class="experience-img">
+                        <div class="experience-overlay">
+                            <div class="experience-info">
+                                <h3>Signature Events</h3>
+                                <p>Celebrate your special moments in an atmosphere of elegance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3: Guest Reception -->
+                <div class="experience-card fade-in-up delay-2">
+                    <div class="experience-img-container">
+                        <img src="assets/luxury_spa_new.png" alt="Guest Reception" class="experience-img">
+                        <div class="experience-overlay">
+                            <div class="experience-info">
+                                <h3>Guest Reception</h3>
+                                <p>A warm and professional welcome to start your perfect stay.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section dark-green-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Gallery</h2>
+                <div class="decorative-line-center"></div>
+                <p>A visual journey through the refined elegance of Gulf Star Hotel.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/hero_bg.png" alt="Gulf Star Exterior" class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up delay-1">
+                    <img src="assets/fine_dining.png" alt="Fine Dining" class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up delay-2">
+                    <img src="assets/signature_events.png" alt="Event Hall" class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up delay-3">
+                    <img src="assets/luxury_spa_new.png" alt="Reception" class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/deluxe_king.png" alt="Deluxe Room" class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up delay-1">
+                    <img src="assets/executive_suite.png" alt="Executive Suite" class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up delay-2">
+                    <img src="assets/presidential_suite.png" alt="Presidential Suite" class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up delay-3">
+                    <img src="assets/family_luxury.png" alt="Family Luxury" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section dark-green-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Guest Experiences</h2>
+                <div class="decorative-line-center"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The epitome of luxury in Hargeisa. The service was impeccable and the restaurant exceeded all expectations."</p>
+                    <h4>- Executive Traveler</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"A stunning hotel. The attention to detail in the rooms and the emerald green aesthetic made our stay unforgettable."</p>
+                    <h4>- International VIP</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section brand-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="decorative-line-center"></div>
+                <p>We are here to assist you with any inquiries or special arrangements.</p>
+            </div>
+            <div class="grid-2">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Hargeisa, Somaliland</p>
+                            <p>Near Ibrahim Dhere Mosque</p>
+                        </div>
+                    </div>
+                    <div class="contact-item mt-2">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+252 63 4022298</p>
+                        </div>
+                    </div>
+                    <div class="contact-item mt-2">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <h3>WhatsApp Support</h3>
+                            <a href="https://wa.me/252634022298?text=Hello%2C%20I%20have%20an%20inquiry%20regarding%20Gulf%20Star." target="_blank" class="btn-primary mt-1" style="display: inline-block;">Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="map-container mt-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.674347717646!2d44.066!3d9.566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x162391e4f6a9e1ff%3A0x464a93a067098f80!2sIbrahim%20Dhere%20Mosque!5e0!3m2!1sen!2sso!4v1714594000000!5m2!1sen!2sso" width="100%" height="300" style="border:0; border-radius: 10px; filter: grayscale(100%) invert(90%) contrast(150%) hue-rotate(90deg) brightness(80%);" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="How can we help you?" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Gulf Star Logo" class="footer-logo" onerror="this.onerror=null; this.src=''; this.alt='Gulf Star Hotel'; this.classList.add('text-logo');">
+                    <p class="mt-2">Luxury Redefined in Hargeisa</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Information</h4>
+                    <p>Hargeisa, Somaliland</p>
+                    <p>Near Ibrahim Dhere Mosque</p>
+                    <p class="mt-2"><strong>Phone:</strong> +252 63 4022298</p>
+                </div>
+                <div class="footer-links">
+                    <p>&copy; 2026 Gulf Star Hotel & Restaurant.</p>
+                    <p>All Rights Reserved.</p>
+                    <div class="social-links mt-2">
+                        <a href="https://www.facebook.com/profile.php?id=61570602996964" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@gulfstarhotel2?_r=1&_t=ZS-961Jau1PEfP" target="_blank" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.81-.6-4.03-1.37-.88-.55-1.64-1.31-2.22-2.22-.03 2.11-.03 4.22-.03 6.32 0 2.82-.9 5.87-3.15 7.64-2.1 1.65-4.88 1.95-7.39 1.37-2.5-.58-4.7-2.31-5.63-4.73-.93-2.42-.64-5.34 1.11-7.29 1.75-1.95 4.41-2.73 6.91-2.14V8.12c-1.57-.35-3.35-.11-4.7 1.12-.84.77-1.35 1.84-1.42 2.97-.07 1.14.34 2.29 1.15 3.1.81.8 1.97 1.15 3.09 1.02 1.12-.13 2.15-.79 2.74-1.75.59-.96.79-2.14.79-3.26V.02z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Premium Booking Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal">&times;</button>
+            
+            <!-- Step 1: Check Availability -->
+            <div id="step-1-availability" class="modal-step active">
+                <div class="modal-header">
+                    <h2>Check Availability</h2>
+                    <div class="decorative-line-center"></div>
+                    <p>Select your dates and room preference.</p>
+                </div>
+                <form id="availability-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Check-in Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Check-out Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Room Type</label>
+                            <select required>
+                                <option value="" disabled selected>Select a Room</option>
+                                <option>Deluxe King Room</option>
+                                <option>Executive Suite</option>
+                                <option>Presidential Suite</option>
+                                <option>Family Luxury Room</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Guests</label>
+                            <select required>
+                                <option>1 Guest</option>
+                                <option>2 Guests</option>
+                                <option>3 Guests</option>
+                                <option>4+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large w-100 mt-2">Check Availability</button>
+                </form>
+            </div>
+
+            <!-- Step Loading -->
+            <div id="step-loading" class="modal-step" style="display: none; text-align: center; padding: 3rem 0;">
+                <div class="spinner"></div>
+                <h3 class="mt-2">Checking Availability...</h3>
+                <p class="mt-2 text-muted">Please wait while we check our reservation system.</p>
+            </div>
+
+            <!-- Step 2: Contact Details -->
+            <div id="step-2-details" class="modal-step" style="display: none;">
+                <div class="modal-header">
+                    <h2 class="accent-text">Room Available!</h2>
+                    <div class="decorative-line-center"></div>
+                    <p>Please provide your details to secure your reservation request.</p>
+                </div>
+                <form id="booking-details-form">
+                    <div class="form-group">
+                        <label>Guest Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+252 ..." required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Special Requests</label>
+                        <textarea rows="2" placeholder="Dietary requirements, occasion, etc."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large w-100 mt-2">Confirm Reservation Request</button>
+                    <button type="button" class="btn-outline w-100 mt-2" id="back-to-step-1">Back</button>
+                </form>
+            </div>
+            
+            <!-- Step Success -->
+            <div id="step-success" class="modal-step" style="display: none; text-align: center; padding: 2rem 0;">
+                <div class="success-icon" style="font-size: 4rem; color: var(--color-white); margin-bottom: 1rem;">&#10003;</div>
+                <h2>Request Confirmed!</h2>
+                <div class="decorative-line-center"></div>
+                <p>Thank you for choosing Gulf Star Hotel. Our concierge will contact you shortly to finalize your booking.</p>
+                <button type="button" class="btn-outline mt-2" id="close-success">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/252634022298?text=Hello%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Gulf%20Star." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+            <path d="M16.05 2.01c-7.73 0-14 6.27-14 14 0 2.45.64 4.8 1.83 6.89L2 29.98l7.26-1.88c2.03 1.09 4.31 1.67 6.69 1.67 7.73 0 14-6.27 14-14s-6.27-14-13.9-13.76zm0 25.56c-2.07 0-4.09-.55-5.86-1.6l-.42-.25-4.36 1.13 1.15-4.25-.27-.43A11.53 11.53 0 014.35 16c0-6.44 5.24-11.68 11.68-11.68s11.68 5.24 11.68 11.68-5.24 11.68-11.66 11.57zM22.45 19.3c-.35-.18-2.08-1.03-2.4-1.15-.32-.11-.56-.18-.79.18-.24.35-.91 1.15-1.12 1.38-.21.24-.43.26-.79.09a9.66 9.66 0 01-2.84-1.75 10.66 10.66 0 01-1.97-2.45c-.21-.35-.02-.55.15-.72.15-.15.35-.41.53-.61.18-.21.24-.35.35-.59.12-.24.06-.44-.03-.61-.09-.18-.79-1.91-1.09-2.61-.29-.69-.58-.6-.79-.61h-.67c-.24 0-.61.09-.94.44s-1.24 1.21-1.24 2.95c0 1.74 1.27 3.42 1.44 3.65.18.24 2.49 3.8 6.04 5.24 2.37.96 3.25 1.04 4.41.87 1.16-.17 3.65-1.49 4.16-2.93.51-1.44.51-2.68.35-2.93-.13-.27-.51-.43-.86-.61z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
